@@ -6,7 +6,7 @@ import { ReactComponent as Heart } from "assets/icons/heart.svg";
 
 import * as S from "./styles";
 
-function Card({ images, name, isFavorite, onFavorite, ...rest }) {
+function Card({ images, name, isFavorite, onFavorite }) {
   return (
     <S.Container>
       <S.Thumbnail src={`${images?.lg}`} alt={name} data-testid="hero-card" />
